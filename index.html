@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                border-bottom: 50px solid white;
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: white;
+                position: fixed; 
+                top: 0; 
+                width: 100%;
+                z-index: 999;
+                /* margin-left: 10%;
+                margin-right: 10%; */
+            }
+            .navbar a {
+                float: right;
+                display: block;
+                color: black;
+                text-decoration: none;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            /* ul.no-bullets {
+                list-style-type: none;
+                display: inline;
+            } */
+
+            .img3 {
+                position: relative;
+                display: block; /* Make the width of box same as image */
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            .img3 .text{
+                position: absolute;
+                z-index: 10;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top: 35%; /* Adjust this value to move the positioned div up and down */
+                text-align: center;
+                width: 60%; /* Set the width of the positioned div */
+                color:white;
+                font-size: 250%;
+                line-height: 300%;
+                font-family: Garamond, serif;
+                letter-spacing: 20px;
+            }
+
+            .flower {
+                /* margin-left: 100px;
+                margin-right: 100px; */
+                margin-top: 60px;
+                /* width: 100%; */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .flower .pic {
+                width: auto;
+                /* height: auto; */
+                position: relative;
+                display: block;
+                
+            }
+            .flower .flower-text {
+                position: absolute;
+                z-index: 444;
+                margin-left: 245px;
+                margin-top: 100px;
+                text-align: center;
+                font-size: 140%; 
+                color: white; 
+                font-weight: lighter;
+
+                /* float: left; */
+            }
+
+            table {
+                width: 76%;
+                border: none;
+                margin-top: 120px;
+                height: 20%;
+                font-family: Garamond, serif;
+                font-weight: lighter;
+                font-size: 170%;
+                letter-spacing: 3px;
+                line-height: 50px;
+                margin-left: 160px;
+                margin-right: 200px;
+            }
+
+            .parent {
+                /* width: 100%; */
+                margin-top: 100px;
+                position: relative;
+            }
+            .img2 {
+                position: relative;
+                margin-left: 160px;
+                width: 76%;
+                /* margin-right: 160px; */
+            }
+            .flower-pic {
+                position: absolute;
+                right: 300px;
+                top: 100px;
+            }
+            .flower-text2 {
+                position: absolute;
+                z-index: 444;
+                right: 400px;
+                top: 200px;
+                text-align: center;
+                font-size: 140%; 
+                color: white; 
+                font-weight: lighter;
+                letter-spacing: 2px; 
+                /* float: left; */
+            }
+
+            .bottom {
+                margin-top: 100px;
+                background-color: #a18a4f;
+                margin-left: 160px;
+                /* margin-right: 200px; */
+                width: 76%;
+                display: table;
+                clear: both;
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
+            .column {
+                float: left;
+                width: 20%;
+                padding-left: 5%;
+            }
+
+            .button {
+                background-color: #a18a4f; /* Green */
+                border: white solid;
+                color: white;
+                /* padding: 15px 32px; */
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 10px 10px;
+                padding: 10px;
+                /* cursor: pointer; */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <!-- <a href="#main-events" style="color: #a18a4f; float: left; margin-left: 15%;">MAIN EVENTS</a> -->
+            <p style="color: #a18a4f; float: left; margin-left: 120px;">MAIN EVENTS</p>
+            <!-- <a href="file:///C:/·Killifish777/Grad/2022spring/CSCI571/HW/HW3//tab.html" style="margin-right: 100px;" target="_blank" data-tile="contact">Contact</a>
+             -->
+             <a href="#tab//contact" style="margin-right: 100px;" target="_blank" data-tile="contact">Contact</a>
+            
+            <a href="file:///C:/·Killifish777/Grad/2022spring/CSCI571/HW/HW3//tab.html" style="margin-right: 70px;" target="_blank" data-tile="gallery">Gallery</a>
+            <a href="file:///C:/·Killifish777/Grad/2022spring/CSCI571/HW/HW3//tab.html" style="margin-right: 70px;" target="_blank" data-tile="about">About</a>
+            <a href="file:///C:/·Killifish777/Grad/2022spring/CSCI571/HW/HW3//tab.html" style="margin-right: 70px;" target="_blank" data-tile="services">Services</a>
+            <a href="file:///C:/·Killifish777/Grad/2022spring/CSCI571/HW/HW3//tab.html" style="color: peru; margin-right: 70px;" target="_blank" data-tile="home">Home</a>
+            
+          </div>
+
+
+        <div class="img3">
+            <img src="image3.png" alt="img3" style="width: 100%;">
+            <div class="text">
+                <h1>Creating<br>Unforgettable<br>Memories</h1>
+            </div>
+        </div>
+        
+        <div class="flower">
+            <img class="pic" src="flower.png" alt="flower" style="float: left; margin-left: 160px;">
+            <div class="flower-text">
+                <h2 style="letter-spacing: 10px; font-weight: normal;">SERVICES</h2>
+                <h3 style="font-weight: lighter; margin-top: 100px; font-family: Garamond, serif; font-size: 100%; letter-spacing: 2px; line-height: 40px;">
+                    Turn the dream into a<br>reality
+                </h3>
+                <button class="button" style="margin-top: 40px;">&emsp;&emsp;DISCOVER&emsp;&emsp;</button>
+            </div>
+            <img class="pic" src="image1.png" alt="img1" style="padding-left: 60px;">
+        </div>
+
+        <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td><span style="color: #a18a4f;">&#10229;</span></td>
+              <th>"<br>I'm a testimonial. Click to edit<br>this text and say somthing nice<br>about you and your services.</th>
+              <td style="text-align: right;"><span style="color: #a18a4f;">&#10230;</span></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th style="color: #a18a4f; font-size: 30%; font-family: Arial, sans-serif; letter-spacing: normal; font-weight: lighter;"><br>Jimmy&#9;and&#9;Janice</th>
+                <th></th>
+            </tr>
+        </table>
+
+        <div class="parent">
+            <img class="img2" src="image2.png" alt="img2" style="height: 720px; object-fit: cover; object-position: 0 -3%;">
+            <img class="flower-pic" src="flower.png" alt="flower">
+            <div class="flower-text2">
+                <h2  style="letter-spacing: 10px; font-weight: normal;">GALLERY</h2>
+                <h3 style="font-weight: lighter; margin-top: 100px; font-family: Garamond, serif; font-size: 100%; letter-spacing: 3px; line-height: 40px;">
+                    Unforgettable<br>Memories
+                </h3>
+                <button class="button" style="margin-top: 40px;">&emsp;&emsp;DISCOVER&emsp;&emsp;</button>
+            </div>
+            
+
+        </div>
+
+
+        <div class="bottom">
+            <div class="column" style="border-right: white 1px solid;">
+                <p style="color: white;">
+                    500 Temple Street<br>San Francisco<br>CA 94155
+                </p>
+            </div>
+            <div class="column" style="padding-left: 2%; border-right: white 1px solid;">
+                <p style="color: white;">
+                    Tel: 123-555-1212<br>Fax: 123-555-1213<br>info@mainevents.com
+                </p>
+            </div>
+            <div class="column" style="padding-left: 2%;">
+                <p style="color: white;">
+                    @ 2023 by Main Events.
+                </p>
+            </div>
+            <div class="column" style="margin-top: 15px;">
+                <button class="button" style="font-size: 14px;">BOOK A CONSULTATION</button>
+            </div>
+        </div>
+    </body>
+</html>
